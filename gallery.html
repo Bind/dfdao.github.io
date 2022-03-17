@@ -138,7 +138,12 @@
         let descriptionJunkWars = document.querySelector('.description-junk-wars');
 
         boxRemembered.addEventListener('click', () => {
-            if (imageRemembered.style.display == 'none' && descriptionRemembered.style.display == 'none') {
+            if (imageRemembered.style.display == 'table-cell' && descriptionRemembered.style.display == 'table-cell') {
+                imageRemembered.style.display = 'none';
+                descriptionRemembered.style.display = 'none';
+                
+            } else {
+                descriptionRemembered.style.display = 'none';
                 imageRemembered.style.display = 'table-cell';
                 descriptionRemembered.style.display = 'table-cell';
                 imageIntergalacticYolo.style.display = 'none';
@@ -147,14 +152,15 @@
                 descriptionAstralColossus.style.display = 'none';
                 imageJunkWars.style.display = 'none';
                 descriptionJunkWars.style.display = 'none';
-            } else {
-                imageRemembered.style.display = 'none';
-                descriptionRemembered.style.display = 'none';
             }
         })
 
         boxIntergalacticYolo.addEventListener('click', () => {
-            if (imageIntergalacticYolo.style.display == 'none' && descriptionIntergalacticYolo.style.display == 'none') {
+            if (imageIntergalacticYolo.style.display == 'table-cell' && descriptionIntergalacticYolo.style.display == 'table-cell') {
+                imageIntergalacticYolo.style.display = 'none';
+                descriptionIntergalacticYolo.style.display = 'none';
+            } else {
+
                 imageIntergalacticYolo.style.display = 'table-cell';
                 descriptionIntergalacticYolo.style.display = 'table-cell';
                 imageRemembered.style.display = 'none';
@@ -163,14 +169,14 @@
                 descriptionAstralColossus.style.display = 'none';
                 imageJunkWars.style.display = 'none';
                 descriptionJunkWars.style.display = 'none';
-            } else {
-                imageIntergalacticYolo.style.display = 'none';
-                descriptionIntergalacticYolo.style.display = 'none';
-            }
+            } 
         })
 
         boxAstralColossus.addEventListener('click', () => {
-            if (imageAstralColossus.style.display == 'none' && descriptionAstralColossus.style.display == 'none') {
+            if (imageAstralColossus.style.display == 'table-cell' && descriptionAstralColossus.style.display == 'table-cell') {
+                imageAstralColossus.style.display = 'none';
+                descriptionAstralColossus.style.display = 'none';
+            } else {
                 imageAstralColossus.style.display = 'table-cell';
                 descriptionAstralColossus.style.display = 'table-cell';
                 imageRemembered.style.display = 'none';
@@ -179,14 +185,14 @@
                 descriptionIntergalacticYolo.style.display = 'none';
                 imageJunkWars.style.display = 'none';
                 descriptionJunkWars.style.display = 'none';
-            } else {
-                imageAstralColossus.style.display = 'none';
-                descriptionAstralColossus.style.display = 'none';
             }
         })
 
         boxJunkWars.addEventListener('click', () => {
-            if (imageJunkWars.style.display == 'none' && descriptionJunkWars.style.display == 'none') {
+            if (imageJunkWars.style.display == 'table-cell' && descriptionJunkWars.style.display == 'table-cell') {
+                imageJunkWars.style.display = 'none';
+                descriptionJunkWars.style.display = 'none';
+            } else {
                 imageJunkWars.style.display = 'table-cell';
                 descriptionJunkWars.style.display = 'table-cell';
                 imageRemembered.style.display = 'none';
@@ -195,10 +201,6 @@
                 descriptionIntergalacticYolo.style.display = 'none';
                 imageAstralColossus.style.display = 'none';
                 descriptionAstralColossus.style.display = 'none';
-
-            } else {
-                imageJunkWars.style.display = 'none';
-                descriptionJunkWars.style.display = 'none';
             }
         })
     </script>
